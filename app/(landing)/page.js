@@ -58,7 +58,7 @@ export default function Home() {
         <div className="text-center">
           <div className="text-primary font-heading-4">مميزات المناهج</div>
           <div className="font-highlight-accent mt-2 mb-6">
-            استعرض الميزات الرئيسية للمناهج المطورة
+            استعراض الميزات الرئيسة للمناهج المطورة
           </div>
           <div className="h-0.5 w-8 bg-primary mx-auto" />
         </div>
