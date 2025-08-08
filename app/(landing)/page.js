@@ -91,6 +91,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* Contact Us */}
       <div
         className="relative py-12 px-3 flex flex-col justify-center items-center"
