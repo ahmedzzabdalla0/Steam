@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex items-center h-full">
           <div className="max-w-[800px] mx-auto px-3">
             <h2 className="font-heading-3 text-button-frames ">
-              {"منهج العلوم المطور"}
+              منهج العلوم المُطور
             </h2>
 
             <div className="text-neutral-400">
@@ -110,7 +110,7 @@ export default function Home() {
           التواصل معنا عبر البريد الإلكتروني.
         </div>
         <div className="w-16 h-0.5 bg-white mx-auto my-6 rounded-full" />
-        <a href="mailto:contact@3teeb.com">
+        <a href="mailto:gehanzayedd@yahoo.com">
           <div className="font-content-bold text-neutral-400 block p-2.5 px-6 bg-primary-200 rounded-3xl">
             اضغط هنا
           </div>
