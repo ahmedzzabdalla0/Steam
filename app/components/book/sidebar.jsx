@@ -54,8 +54,8 @@ export default function Sidebar() {
       </h1>
       <ul
         className={twMerge(
-          "sm:flex flex-col gap-y-4 items-center absolute z-30 bg-neutral-200 shadow-md rounded-m top-[130%] right-1.5 duration-100 opacity-0 sm:opacity-100 sm:bg-transparent sm:shadow-none sm:rounded-none sm:top-auto sm:relative",
-          isOpen && "opacity-100"
+          "hidden sm:flex flex-col gap-y-4 items-center absolute z-30 bg-neutral-200 shadow-md rounded-m top-[130%] right-1.5 duration-100 opacity-0 sm:opacity-100 sm:bg-transparent sm:shadow-none sm:rounded-none sm:top-auto sm:relative",
+          isOpen && "opacity-100 block"
         )}
       >
         {sidebarLinks.map((link, index) => (

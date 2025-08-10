@@ -29,7 +29,7 @@ export default function BookPage() {
               className="bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-[5px] border border-primary/20
  rounded-m p-5"
             >
-              <h6 className="font-heading-6 font-black text-primary-400">
+              <h6 className="font-heading-6 font-black text-primary-400 pointer-events-auto">
                 {unit.label}
               </h6>
               <p className="font-content-bold text-primary mt-2">
