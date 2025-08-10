@@ -109,9 +109,9 @@
   --color-neutral-500: #bebcbd;
   --color-neutral-600: #b2b0b0;
   --color-neutral-700: #a6a4a4;
-  --color-neutral-800: #9b9797;
+  --color-neutral-800: #a1a1bd;
   --color-neutral-900: #8f8a8a;
-  --color-neutral-1000: #837e7e;
+  --color-neutral-1000: #f5f4f9;
   --color-neutral-1100: #777172;
   --color-neutral-1200: #6b6566;
   --color-neutral-1300: #5f595a;
@@ -625,14 +625,15 @@
 }
 
 @utility font-caption-bold {
+  font-family: var(--font-almarai);
+  letter-spacing: var(--letter-spacing-0);
+  text-transform: var(--text-case-none);
+  text-decoration: var(--text-decoration-none);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-0);
+  line-height: var(--leading-0);
   @media (min-width: theme(breakpoint-lg)) {
-    font-family: var(--font-almarai);
-    letter-spacing: var(--letter-spacing-0);
-    text-transform: var(--text-case-none);
-    text-decoration: var(--text-decoration-none);
-    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1);
-    line-height: var(--leading-0);
   }
 }
 

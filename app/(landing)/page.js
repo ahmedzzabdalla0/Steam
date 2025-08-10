@@ -3,6 +3,7 @@ import bgImage from "@/assets/images/bg.svg";
 import ComplementaryIcon from "@/assets/icons/complementary";
 import InterconnectedIcon from "@/assets/icons/interconnected";
 import EffectiveLearningIcon from "@/assets/icons/effective-learning";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,18 +30,18 @@ export default function Home() {
                 وتنمي مهارات القرن الحادي والعشرين لدى الطلاب.
               </p>
               <div className="flex items-center gap-x-2 mt-5 font-content-bold">
-                <a
-                  href=""
+                <Link
+                  href="/book"
                   className="block p-2.5 px-6 bg-primary-100 rounded-3xl"
                 >
                   <span>عرض المناهج</span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="block p-2.5 px-6 border border-primary-100 hover:bg-primary-100 transition-colors rounded-3xl"
                 >
                   <span>تواصل معنا</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
