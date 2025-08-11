@@ -1,9 +1,14 @@
 import Sidebar from "@/components/book/sidebar";
+import { StagesMetadata } from "@/static/metadata";
 import { Stages } from "@/static/stages";
 import Link from "next/link";
 import { Fragment } from "react";
+
+export function generateMetadata() {
+  return StagesMetadata;
+}
+
 export default function BookPage() {
-  const lenMaxYears = Math.max(...Stages.map((stage) => stage.years.length));
   return (
     <div className="flex flex-col sm:flex-row absolute inset-0 gap-x-4">
       {/* Sidebar */}
@@ -17,17 +22,17 @@ export default function BookPage() {
             {"المراحل"}
           </span>
         </div>
-        {Stages.map(({ label: stage, years }, i) => (
+        {Stages.map(({ id: stage_id, label: stage, years }, i) => (
           <Fragment key={stage}>
             <h1 className="font-highlight-bold font-black text-primary mb-5">
               <span className="mx-2">{">"}</span>
               <span className="underline underline-offset-4">{stage}</span>
             </h1>
-            <div className="grid [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] gap-x-7 h-fit relative">
-              {years.map((year, j) => (
+            <div className="grid [grid-template-columns:repeat(auto-fit,minmax(250px,300px))] gap-7 h-fit relative">
+              {years.map(({ id: year_id, label: year, units }, j) => (
                 <div
                   key={stage + year}
-                  className="mb-7 bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-[5px] border border-primary/20
+                  className="bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-[5px] border border-primary/20
  rounded-m p-5"
                 >
                   <h6 className="font-heading-6 font-black text-primary-400 pointer-events-auto">
@@ -35,28 +40,26 @@ export default function BookPage() {
                   </h6>
                   <p className="font-content-bold text-primary mt-2">{stage}</p>
                   <div className="mt-4 grid grid-cols-1 w-full gap-3">
-                    {Array.from({ length: 3 }, (_, j) => (
+                    {units.map(({ id: unit_id, label: unit }, unitIndex) => (
                       <Link
-                        key={j + "l"}
+                        key={unit_id}
                         className="flex items-center gap-x-2 font-caption-bold"
-                        href="/book/unit"
+                        href={`/book/${stage_id}/${year_id}/${unit_id}`}
                       >
                         <p className="bg-primary rounded-full font-caption-bold h-6.5 w-6.5 flex items-center justify-center aspect-square text-neutral-200">
-                          {j + 1}
+                          {unitIndex + 1}
                         </p>
-                        الوحدة الأولى
+                        <span className="hover:text-primary transition-colors">
+                          {unit}
+                        </span>
                       </Link>
                     ))}
                   </div>
                 </div>
               ))}
-              {lenMaxYears > years.length &&
-                Array.from({ length: lenMaxYears - years.length }, (_, k) => (
-                  <div key={k + "empty"} className="invisible" />
-                ))}
             </div>
             {i < Stages.length - 1 && (
-              <div className="border-t border-primary/20 mb-5 mt-[calc(-7*4px+7*4px)]" />
+              <div className="border-t border-primary/20 mb-5 mt-7" />
             )}
           </Fragment>
         ))}

@@ -11,3 +11,15 @@ export const LandingMetadata = Object.freeze({
     },
   ],
 });
+
+export const StagesMetadata = Object.freeze({
+  title: "مراحل التعليم",
+  description: "استكشف مراحل التعليم المختلفة",
+  keywords: "مراحل, تعليم, استكشاف",
+  authors: [
+    {
+      name: "الباحثة جيهان زايد",
+      title: "قائدة فريق تطوير منهج العلوم في ضوء مدخل STEAM",
+    },
+  ],
+});
