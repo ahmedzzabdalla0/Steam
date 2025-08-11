@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
             <Breadcrumbs />
           </div>
           <div
-            className="bg-neutral-1000 h-full border border-primary-400/5 rounded-md p-7 overflow-y-scroll [-webkit-overflow-scrolling:touch] relative bg-fixed [background-position:right_-16px] bg-cover"
+            className="bg-neutral-1000 h-full border border-primary-400/5 rounded-md p-7 overflow-y-scroll [-webkit-overflow-scrolling:touch] relative bg-fixed [background-position:right_-18px] bg-cover"
             style={{ backgroundImage: `url(/bg-light.png)` }}
           >
             {children}
