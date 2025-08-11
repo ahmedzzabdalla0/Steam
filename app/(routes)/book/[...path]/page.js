@@ -60,9 +60,7 @@ export default async function LessonsPage({ params }) {
 
   return (
     <>
-      <Tag>{`الوحدة ${feminineNumericWord[unit_index + 1]} - ${
-        unit.label
-      }`}</Tag>
+      <Tag>{`الوحدة ${feminineNumericWord[unit_index]} - ${unit.label}`}</Tag>
 
       {semesters.map(
         ({ id: semester_id, label: semester_label, lessons }, i) => (
