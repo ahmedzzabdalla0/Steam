@@ -8,15 +8,15 @@ export const Lessons = {
           lessons: [
             {
               id: "cell_and_exploration_of_life",
-              label: "الخلية واستكشاف الحياة.",
+              label: "الخلية واستكشاف الحياة",
             },
             {
               id: "transport_processes_in_the_cell",
-              label: "عمليات النقل في الخلية.",
+              label: "عمليات النقل في الخلية",
             },
             {
               id: "levels_of_organization_in_living_organisms",
-              label: "مستويات التنظيم في الكائنات الحية.",
+              label: "مستويات التنظيم في الكائنات الحية",
             },
           ],
         },
@@ -24,9 +24,9 @@ export const Lessons = {
           id: "second_semester",
           label: "الفصل الدراسي الثاني",
           lessons: [
-            { id: "genetic_material", label: "المادة الوراثية." },
-            { id: "reproduction", label: "التكاثر." },
-            { id: "inheritance", label: "الوراثة." },
+            { id: "genetic_material", label: "المادة الوراثية" },
+            { id: "reproduction", label: "التكاثر" },
+            { id: "inheritance", label: "الوراثة" },
           ],
         },
       ],
@@ -38,7 +38,7 @@ export const Lessons = {
             { id: "ecosystems", label: "الأنظمة البيئية" },
             {
               id: "biological_communities_and_their_interrelationships",
-              label: "الجماعات الحيوية وعلاقتها المتبادلة.",
+              label: "الجماعات الحيوية وعلاقتها المتبادلة",
             },
           ],
         },
@@ -48,9 +48,9 @@ export const Lessons = {
           lessons: [
             {
               id: "relative_and_absolute_age_dating",
-              label: "التأريخ بالعمر النسبي والمطلق.",
+              label: "التأريخ بالعمر النسبي والمطلق",
             },
-            { id: "rock_record", label: "السجل الصخري." },
+            { id: "rock_record", label: "السجل الصخري" },
           ],
         },
       ],
@@ -59,8 +59,8 @@ export const Lessons = {
           id: "first_semester",
           label: "الفصل الدراسي الأول",
           lessons: [
-            { id: "structure_of_matter", label: "تركيب المادة." },
-            { id: "periodic_table", label: "الجدول الدوري." },
+            { id: "structure_of_matter", label: "تركيب المادة" },
+            { id: "periodic_table", label: "الجدول الدوري" },
           ],
         },
         {
@@ -77,8 +77,8 @@ export const Lessons = {
           id: "first_semester",
           label: "الفصل الدراسي الأول",
           lessons: [
-            { id: "industrial_drawing", label: "الرسم الصناعي." },
-            { id: "projection", label: "الأسقاط." },
+            { id: "industrial_drawing", label: "الرسم الصناعي" },
+            { id: "projection", label: "الأسقاط" },
             { id: "perspective", label: "المنظور" },
           ],
         },
@@ -204,11 +204,11 @@ export const Lessons = {
           lessons: [
             {
               id: "regulation_and_organization_of_the_human_body",
-              label: "ضبط وتنظيم جسم الانسان.",
+              label: "ضبط وتنظيم جسم الانسان",
             },
             {
               id: "integration_of_human_systems",
-              label: "تكامل أجهزة الانسان.",
+              label: "تكامل أجهزة الانسان",
             },
           ],
         },
