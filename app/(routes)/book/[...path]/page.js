@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${unit_label} - ${year_label}`,
-    description: `تعرّف على دروس وحدة ${feminineNumericWord[unit_index]}: ${unit_label} في ${year_label}`,
+    description: `تعرّف على دروس الوحدة ${feminineNumericWord[unit_index]}: ${unit_label} في ${year_label}`,
     authors: [
       {
         name: "الباحثة جيهان زايد",
