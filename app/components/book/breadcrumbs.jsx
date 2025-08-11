@@ -28,14 +28,14 @@ export default function Breadcrumbs() {
   const unit = year?.units.find((u) => u.id === unit_id);
   if (unit)
     crumbs.push({
-      label: `${year.label} - ${unit.label}`,
+      label: `${unit.label}`,
       ...(lessonPath.length > 3 && {
         href: `/book/${stage_id}/${year_id}/${unit.id}`,
       }),
     });
 
   return (
-    <div className="flex items-center space-x-2 font-caption-bold">
+    <div className="flex items-center space-x-2 font-caption-bold overflow-x-auto truncate">
       <span className="block pl-2">
         <PathIcon className="icon-6 rotate-90" />
       </span>
