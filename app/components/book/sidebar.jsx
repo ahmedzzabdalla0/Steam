@@ -20,28 +20,28 @@ export default function Sidebar() {
           className="relative sm:hidden"
           onClick={() => setIsOpen((x) => !x)}
         >
-          <div className="relative flex overflow-hidden items-center justify-center transform transition-all duration-100">
+          <div className="relative flex overflow-hidden items-center justify-center transform transition-all duration-200">
             <div
               className={twMerge(
-                "flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-100 origin-center overflow-hidden",
+                "flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-200 origin-center overflow-hidden",
                 isOpen && "rotate-90"
               )}
             >
               <div
                 className={twMerge(
-                  "bg-primary h-[2px] w-7 transform transition-all duration-100 origin-left rotate-0",
+                  "bg-primary h-[2px] w-7 transform transition-all duration-200 origin-left rotate-0",
                   isOpen && "rotate-[42deg] w-2/3"
                 )}
               ></div>
               <div
                 className={twMerge(
-                  "bg-primary h-[2px] w-7 rounded transform transition-all duration-100",
+                  "bg-primary h-[2px] w-7 rounded transform transition-all duration-200",
                   isOpen && "translate-x-10"
                 )}
               ></div>
               <div
                 className={twMerge(
-                  "bg-primary h-[2px] w-7 transform transition-all duration-100 origin-left",
+                  "bg-primary h-[2px] w-7 transform transition-all duration-200 origin-left",
                   isOpen && "-rotate-[42deg] w-2/3"
                 )}
               ></div>
