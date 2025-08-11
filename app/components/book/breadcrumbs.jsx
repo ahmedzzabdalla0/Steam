@@ -22,9 +22,6 @@ export default function Breadcrumbs() {
     { label: "المناهج", ...(pathname.length > 1 && { href: "/book" }) },
   ];
   const lessonPath = pathname.slice(1, 4);
-  console.log(pathname);
-  console.log(lessonPath);
-
   const [stage_id, year_id, unit_id] = lessonPath;
   const stage = Stages.find((s) => s.id === stage_id);
   const year = stage?.years.find((y) => y.id === year_id);
