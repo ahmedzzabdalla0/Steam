@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           </div>
           <div
             className="bg-neutral-1000/[97%] [background-blend-mode:lighten] h-full border border-primary-400/5 rounded-md p-7 overflow-y-scroll [-webkit-overflow-scrolling:touch] relative bg-fixed bg-top-right bg-cover"
-            style={{ backgroundImage: `url(/bg-light.svg)` }}
+            style={{ backgroundImage: `url(/bg-light.png)` }}
           >
             {children}
           </div>
