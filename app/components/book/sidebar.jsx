@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -49,9 +50,12 @@ export default function Sidebar() {
           </div>
         </button>
       </div>
-      <h1 className="font-heading-5 text-primary-200 text-center mr-auto mt-4 sm:my-12 sm:mx-0">
+      <Link
+        className="block font-heading-5 text-primary-200 text-center mr-auto mt-4 sm:my-12 sm:mx-0"
+        href="/"
+      >
         STEAM
-      </h1>
+      </Link>
       <ul
         className={twMerge(
           "hidden sm:flex flex-col gap-y-4 items-center absolute z-30 bg-neutral-200 shadow-md rounded-m top-[130%] right-1.5 duration-100 opacity-0 sm:opacity-100 sm:bg-transparent sm:shadow-none sm:rounded-none sm:top-auto sm:relative",
