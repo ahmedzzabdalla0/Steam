@@ -6,7 +6,7 @@ export const metadata = LandingMetadata;
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      {children}
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }
