@@ -1,5 +1,6 @@
 import "./globals.css";
 import { LandingMetadata } from "@/static/metadata";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = LandingMetadata;
 
