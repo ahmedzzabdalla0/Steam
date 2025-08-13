@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="container w-auto">
       {/* Base */}
-      <div className="h-screen relative">
+      <div className="h-lvh relative">
         {/* Background Image */}
         <div className="bg-primary-300 full-width h-full absolute -z-10">
           <Image src={bgImage} layout="fill" objectFit="cover" alt="" />
