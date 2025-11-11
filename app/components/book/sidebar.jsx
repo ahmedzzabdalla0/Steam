@@ -13,6 +13,7 @@ export default function Sidebar() {
     "اختبارات",
     "أوراق عمل",
     "المشروع",
+    "ملف الطالب",
   ];
   return (
     <nav className="h-fit sm:w-[250px] sm:h-full bg-primary-500 bg-white py-4 pb-2 px-6 sm:py-4 sm:px-4 flex sm:flex-col items-center relative">
