@@ -37,7 +37,7 @@ export default function Home() {
                   <span>عرض المناهج</span>
                 </Link>
                 <Link
-                  href=""
+                  href="mailto:gehanzayedd@yahoo.com"
                   className="block p-2.5 px-6 border border-primary-100 hover:bg-primary-100 transition-colors rounded-3xl"
                 >
                   <span>تواصل معنا</span>
