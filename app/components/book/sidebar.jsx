@@ -1,20 +1,30 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const sidebarLinks = [
-    "الكتب المقررة",
-    "دليل المعلم",
-    "ملخصات",
-    "اختبارات محوسبة",
-    "اختبارات",
-    "أوراق عمل",
-    "المشروع",
-    "ملف الطالب",
+    { label: "الكتب المقررة", href: "/book" },
+    { label: "دليل المعلم", href: "#" },
+    { label: "ملخصات", href: "#" },
+    { label: "اختبارات محوسبة", href: "#" },
+    { label: "اختبارات", href: "#" },
+    { label: "أوراق عمل", href: "#" },
+    { label: "المشروع", href: "#" },
+    { label: "ملف الطالب", href: "#" },
+    { label: "ملفات إرشادية", href: "/book/guidelines" },
   ];
+  
+  const isActive = (href) => {
+    if (href === "/book") {
+      return pathname === "/book" || (pathname.startsWith("/book/") && !pathname.startsWith("/book/guidelines"));
+    }
+    return pathname === href;
+  };
   return (
     <nav className="h-fit sm:w-[250px] sm:h-full bg-primary-500 bg-white py-4 pb-2 px-6 sm:py-4 sm:px-4 flex sm:flex-col items-center relative">
       <div>
@@ -65,15 +75,15 @@ export default function Sidebar() {
       >
         {sidebarLinks.map((link, index) => (
           <li className="w-full p-2 sm:p-0" key={index}>
-            <a
-              href="#"
+            <Link
+              href={link.href}
               className={twMerge(
-                "w-full block font-content-bold p-2 px-5 rounded-md text-primary-400 sm:text-neutral-800",
-                index === 0 && "bg-primary-200/10 text-primary sm:text-primary"
+                "w-full block font-content-bold p-2 px-5 rounded-md text-primary-400 sm:text-neutral-800 hover:bg-primary-200/5 transition-colors",
+                isActive(link.href) && "bg-primary-200/10 text-primary sm:text-primary"
               )}
             >
-              {link}
-            </a>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>
